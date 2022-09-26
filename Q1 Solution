@@ -1,0 +1,18 @@
+def getFactorial(num):
+    res = num
+    for i in range(num-1,0,-1):
+        res*=i
+    return res
+
+def getDigitSum(num):
+    summ = 0
+    for i in str(num):
+        summ+=int(i)
+    return summ
+        
+def driverCode(num):
+    factorial = getFactorial(num)
+    digit_sum = getDigitSum(factorial)
+    return digit_sum
+
+driverCode(100)
